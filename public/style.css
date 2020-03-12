@@ -1,0 +1,33 @@
+#map {
+  height: 600px
+}
+
+#game-area {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas: 
+          ". north ."
+          "west map east"
+          ". south ."
+}
+
+#map {
+  grid-area: map
+}
+
+#north {
+  grid-area: north
+}
+
+#south {
+  grid-area: south
+}
+
+#east {
+  grid-area: east
+}
+
+#west {
+  grid-area: west
+}
